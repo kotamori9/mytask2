@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+.task__header{
+  height: 100px;
+  width: 100%;
+  background-color:#000044;
+  line-height: 100px;
+  padding-left: 30px;
+  display: flex;
+  
+
+  &__box1{
+    width: 40%;
+    font-size: 40px;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    text-shadow: 1px 1px;
+  }
+
+  &__box2{
+    width: 30%;
+    position: relative;
+    height: 100px;
+    padding-left: 200px;
+    display: flex;
+    text-shadow: 0.8px 0.8px;
+    
+
+    &__name{
+      color: white;
+      font-size: 30px;
+      height: 20px;
+      width: 40%;
+      line-height: 20px;
+      margin-top: 40px;
+      padding-right: 30px;
+      text-align: right;
+      text-shadow: 1px 1px;
+
+      a{
+        text-decoration: none;
+        color: white;
+      }
+
+      a:hover{
+        top:90px;
+        text-shadow: 0 2px 0 black;
+      }
+    }
+
+    &__search{
+      color: white;
+      margin-right: 100px;
+      width: 40%;
+      padding-right: 100px;
+    }
+  }
+}
+
+.task__main{
+  height: calc(100vh - 100px);
+  width: 100%;
+  background-color: #000077;
+  position: absolute;
+  overflow: scroll;
+
+  &__new{
+    height: 100px;
+    margin: 30px 30px 0px 30px;
+    position: relative;
+
+    .edit_task{
+      height: 50%;
+      width: 100%;
+      top: 25px;
+      display: flex;
+      justify-content: space-between;
+     }
+
+    .field_with_errors{
+      display: contents;
+    }
+    
+    &__form{
+      height: 50px;
+      width: 60%;
+      top: 25px;
+      margin-left: 20px;
+      line-height: 50px;
+      font-size: 20px;
+      background-color: white;
+      position: relative;
+    }
+
+    &__date{
+      position: relative;
+      top: 25px;
+      height: 100%;
+    }
+
+    &__btn{
+      height: 50px;
+      width: 10%;
+      top:25px;
+      background-color: #1abc9c;
+      border-radius: 4px;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+      line-height: 50px;
+      font-size: 20px;
+      margin-left: 100px;
+      position: relative;
+      transition: none;
+    }
+
+    &__btn:hover{
+      top: 23px;
+      box-shadow: 0 7px 0 #23a188;
+    }
+
+    &__btn:active {
+      top: 25px;
+      box-shadow: none;
+    }
+  }
+
+  &__list{
+    margin: 0px 30px 30px 30px;
+
+    &__to-do{
+      background-color: #1abc9c;
+      height:100px;
+      font-size: 30px;
+      line-height: 100px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      width: 100％;
+      box-shadow: 10px 8px #000033;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+
+      &__delete{
+        color: red;
+      }
+
+      a{
+        color: white;
+        text-decoration: none;
+      }
+
+      a:hover{
+        top:90px;
+        text-shadow: 0 4px 0 black;
+      }
+
+    }
+  }
+}
