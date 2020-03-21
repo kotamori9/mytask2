@@ -1,0 +1,26 @@
+.task
+  .task__header
+    .task__header__box1
+      TODOリスト
+    = form_tag search_tasks_path,method: 'get',class:"task__header__box2__search" do
+      = "ToDo検索" 
+      = text_field_tag :search,'',class:'task__header__box2__search__text',placeholder: "検索ワード入力"
+      = submit_tag '検索',content: :nil,class:"task__header__box2__search__text"
+    .task__header__box2__name
+      = link_to edit_user_path(current_user) do
+        = current_user.name
+   
+  .task__main
+    .task__main__new
+      = form_for [@task] do |f|
+        = f.text_field :content, class: 'task__main__new__form', placeholder: '新しいToDoを入力してください'
+        = f.submit '作成', class: 'task__main__new__btn'
+    .task__main__list
+      - @tasks.each do |task|
+        .todo__main__list__to-do
+          = link_to "#{task.content}", "/tasks/#{task.id}", method: :get
+          = link_to "/tasks/#{task.id}", method: :delete do
+            = icon('fas', 'trash-alt', class: 'todo__main__list__to-do__delete')
+          
+
+    
