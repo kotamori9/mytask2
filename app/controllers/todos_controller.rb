@@ -9,11 +9,11 @@ class TodosController < ApplicationController
     @todo = Todo.create(todo_params)
     if @todo.save
       flash[:notice]='ToDoが作成されました'
-      return_back and return
+      redirect_back(fallback_location: root_path)
       
     else
       flash[:alert]='ToDoを入力してください'
-      return_back and return
+      redirect_back(fallback_location: root_path)
     end
   end
 
@@ -21,7 +21,7 @@ class TodosController < ApplicationController
     todo = Todo.find(params[:id])
     flash[:alert]='ToDoを削除しました'
     todo.destroy
-    return_back and return 
+    redirect_back(fallback_location: root_path)
   end
 
   private

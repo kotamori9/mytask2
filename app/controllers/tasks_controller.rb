@@ -1,5 +1,5 @@
 class TasksController < ApplicationController
-   
+  #  before_action :move_to_index, except: [:index, :show, :search]
    def index
     @tasks =Task.all
     @task =Task.new
