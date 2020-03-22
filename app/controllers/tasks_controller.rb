@@ -26,17 +26,13 @@ class TasksController < ApplicationController
   end
 
   def search
-    @tasks = Task.search(search_params)
+    @tasks = Task.search(params[:keyword])
   end
 
   private
 
   def task_params
     params.require(:task).permit(:content).merge(user_id: current_user.id)
-  end
-
-  def search_params
-    params.permit(:search)
   end
 
 end
