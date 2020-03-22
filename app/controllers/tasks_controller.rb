@@ -3,6 +3,12 @@ class TasksController < ApplicationController
    def index
     @tasks =Task.all
     @task =Task.new
+
+    if search
+      Task.where('content LIKE(?)', "%#{search}%")
+    else
+      Task.all
+    end
   end
 
   def create
