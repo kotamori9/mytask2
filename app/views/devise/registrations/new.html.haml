@@ -9,7 +9,7 @@
         = devise_error_messages!
         .field
           .field-label
-            = f.label :name
+            = f.label :名前
           .field-input
             = f.text_field :name, autofocus: true
         .field
@@ -29,4 +29,4 @@
           .field-input
             = f.password_field :password_confirmation, autocomplete: "off"
         .actions
-          = f.submit "Create Account", class: 'btn'
+          = f.submit "アカウント作成", class: 'btn'
