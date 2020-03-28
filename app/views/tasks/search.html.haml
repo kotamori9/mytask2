@@ -15,8 +15,9 @@
 
 
   .search__main
-  .search__main__list
-    - @tasks.each do |task|
-      .search__main__list__to-do
-        = link_to "#{task.content}", "/tasks/#{task.id}", method: :get
-        = link_to '削除', "/tasks/#{task.id}", method: :delete
+    .search__main__list
+      - @tasks.each do |task|
+        .search__main__list__to-do
+          = link_to "#{task.content}", "/tasks/#{task.id}", method: :get
+          = link_to "/tasks/#{task.id}", method: :delete do
+            = icon('fas', 'trash-alt', class: 'todo__main__list__to-do__delete')

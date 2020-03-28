@@ -1,14 +1,8 @@
 class TasksController < ApplicationController
-  #  before_action :move_to_index, except: [:index, :show, :search]
+  
    def index
     @tasks =Task.all
     @task =Task.new
-
-    if search
-      Task.where('content LIKE(?)', "%#{search}%")
-    else
-      Task.all
-    end
   end
 
   def create
@@ -41,4 +35,7 @@ class TasksController < ApplicationController
     params.require(:task).permit(:content).merge(user_id: current_user.id)
   end
 
+  # def search_params
+  #   params.require(:q).permit!
+  # end
 end
