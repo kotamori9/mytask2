@@ -20,6 +20,7 @@
           .actions
             = f.submit "ログイン", class: 'btn'
 
-      -# -# ゲストユーザー用
-      -# =link_to 'ゲストログイン（閲覧用）',tasks_guest_sign_in_path, method: :post
+      -# ゲストユーザー用
+      
+      =link_to 'ゲストログイン（閲覧用）', users_guest_sign_in_path, method: :post 
 

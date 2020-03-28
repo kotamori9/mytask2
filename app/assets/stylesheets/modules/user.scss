@@ -16,6 +16,23 @@
       content: "";
       display: block;
     }
+
+    a{
+      background-color: blue;
+      text-decoration: none;
+      color: #fff;
+
+      margin-top:20px;
+      margin-left: 5px;
+      display: inline-block;
+      height: 50px;
+      padding: 0 30px;
+      line-height: 50px;
+      letter-spacing: 1px;
+      text-align: center;
+      border: none;
+      border-radius: 2px;
+    }
   }
 
   .account-page__header {

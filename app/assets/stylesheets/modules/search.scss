@@ -21,38 +21,37 @@
   }
 
   &__box2{
-    width: 30%;
-    position: relative;
+    width: 100%;
+    margin-right: 30px;
     height: 100px;
-    padding-left: 200px;
     display: flex;
     text-shadow: 0.8px 0.8px;
-    
 
     &__name{
       color: white;
       font-size: 30px;
       height: 20px;
-      width: 40%;
+      width: 50%;
       line-height: 20px;
       margin-top: 40px;
-      text-shadow: 1px 1px;
+
+      &__cog-btn{
+        height: 20px;
+        width: 10%;
+        line-height: 20px;
+        margin-top: 40px;
+        color:white;
+        font-size: 30px;
+      }
+
+      &__search{
+        background-color: #fff;
+      }
 
       a{
         text-decoration: none;
         color: white;
       }
-
-      a:hover{
-        top:90px;
-        text-shadow: 0 2px 0 black;
-      }
-    }
-
-    &__search{
-      color: white;
-      width: 40%;
-      padding-right: 50px;
     }
 
     &__return{
@@ -62,10 +61,11 @@
       width: 50%;
       line-height: 20px;
       margin-top: 40px;
+      margin-left: 200px;
       text-decoration: none;
     }
 
-    a:hover{
+    &__return:hover{
       top:20px;
       text-shadow: 0 2px 0 black;
     }
