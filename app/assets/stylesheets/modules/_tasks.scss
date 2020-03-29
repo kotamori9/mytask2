@@ -25,13 +25,25 @@
     }
 
     &__box2{
-      width: 30%;
+      width: 90%;
       position: relative;
       height: 100px;
-      padding-left: 200px;
+      padding-left: 20px;
       display: flex;
       text-shadow: 0.8px 0.8px;
       
+
+      &__image {
+         //サイズ指定
+         width: 80px;
+         height: 80px;
+         //画像を丸くする
+         border-radius: 100px;
+         //タテヨコ比を変えないままトリミング
+         object-fit: cover;
+         margin-right: 10px;
+         margin-top: 10px;
+      }
 
       &__name{
         color: white;
@@ -52,16 +64,6 @@
         a:hover{
           top:90px;
           text-shadow: 0 2px 0 black;
-        }
-
-        .icon_image {
-          //サイズ指定
-          width: 200px;
-          height: 200px;
-          //画像を丸くする
-          border-radius: 100px;
-          //タテヨコ比を変えないままトリミング
-          object-fit: cover;
         }
       }
 

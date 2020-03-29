@@ -4,13 +4,13 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validates :name, presence: true, uniqueness: true
+  validates :name, presence: true, uniqueness: true,length: { maximum: 6 }
   has_many :tasks ,foreign_key:true
   has_many :todos
 
   def self.guest
     find_or_create_by!(email: 'guest@example.com') do |user|
-      user.password = SecureRandom.urlsafe_base64
+      user.password = password123
       user.name = "ゲスト"
     end
   end
