@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/show'
   root "tasks#index"
   devise_for :users
   devise_scope :user do
@@ -6,7 +7,7 @@ Rails.application.routes.draw do
   end
 
   
-  resources :users, only: [:edit, :update, :destroy]
+  resources :users, only: [:edit, :update,:show,:destroy]
   resources :tasks, only: [:index,:new,:create,:show,:destroy] do
     collection do
       get 'search'
