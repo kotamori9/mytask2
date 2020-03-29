@@ -2,14 +2,9 @@
   .search__header
     .search__header__box1
       TODOリスト
-    = form_tag search_tasks_path,method: 'get',class:"search__header__box2__search" do
-      = "ToDo検索" 
-      = text_field_tag :search,'',class:'task__header__box2__search__text',placeholder: "検索ワード入力"
-      = submit_tag '検索',content: :nil,class:"search__header__box2__search__text"
     .search__header__box2
       .search__header__box2__name
-        = link_to edit_user_path(current_user) do
-          = current_user.name
+        = current_user.name
       = link_to "/", method: :get do
         = icon('fas', 'undo-alt', class: 'search__header__box2__return')
 
