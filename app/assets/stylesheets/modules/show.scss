@@ -34,6 +34,7 @@
       width: 50%;
       line-height: 20px;
       margin-top: 40px;
+      display: flex;
 
       &__cog-btn{
         height: 20px;
@@ -44,8 +45,18 @@
         font-size: 30px;
       }
 
-      &__search{
-        background-color: #fff;
+      &__image{
+        //サイズ指定
+        width: 80px;
+        height: 80px;
+        //画像を丸くする
+        border-radius: 100px;
+        //タテヨコ比を変えないままトリミング
+        object-fit: cover;
+        
+        margin-left: 10px;
+        position: relative;
+        top: -30px;
       }
 
       a{
@@ -53,6 +64,8 @@
         color: white;
       }
     }
+
+    
 
     &__return{
       color: white;

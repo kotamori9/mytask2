@@ -5,6 +5,7 @@
     .todo__header__box2
       .todo__header__box2__name
         = current_user.name
+        = image_tag "#{current_user.image}",class: "todo__header__box2__name__image"
       = link_to "/", method: :get do
         = icon('fas', 'undo-alt', class: 'todo__header__box2__return')
 
