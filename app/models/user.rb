@@ -15,4 +15,7 @@ class User < ApplicationRecord
     end
   end
   
+  # ユーザー写真
+  mount_uploader :image, ImageUploader
+
 end

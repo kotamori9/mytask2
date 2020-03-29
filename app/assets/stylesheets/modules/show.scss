@@ -175,9 +175,38 @@
       width: 100％;
       box-shadow: 10px 8px #000033;
       text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+      display: flex;
+
+      &__image{
+        //サイズ指定
+        width: 80px;
+        height: 80px;
+        //画像を丸くする
+        border-radius: 100px;
+        //タテヨコ比を変えないままトリミング
+        object-fit: cover;
+        
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+
+      &__end{
+        margin-left: 5%;
+      }
+
+      &__limit{
+        margin-left: 5%;
+      }
+
+      &__person{
+        margin-left: 5%;
+      }
+
+
 
       &__delete{
         color: red;
+        margin-left: 200%;
       }
 
       a{

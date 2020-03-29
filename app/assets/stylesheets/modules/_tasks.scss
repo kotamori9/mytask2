@@ -53,6 +53,16 @@
           top:90px;
           text-shadow: 0 2px 0 black;
         }
+
+        .icon_image {
+          //サイズ指定
+          width: 200px;
+          height: 200px;
+          //画像を丸くする
+          border-radius: 100px;
+          //タテヨコ比を変えないままトリミング
+          object-fit: cover;
+        }
       }
 
       &__search{
