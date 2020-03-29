@@ -5,15 +5,12 @@
     =form_with(url:search_tasks_path,local: true, method: :get,class:"task__header__box2__search") do |f|
       =f.text_field:keyword, placeholder:"ToDoを検索する", class: "search-input"
       =f.submit"検索", class: "task__header__box2__search__text" 
-
-    -# = form_tag search_tasks_path,method: 'get',class:"task__header__box2__search" do
-    -#   = "ToDo検索" 
-    -#   = text_field_tag :search,'',class:'task__header__box2__search__text',placeholder: "検索ワード入力"
-    -#   = submit_tag '検索',content: :nil,class:"task__header__box2__search__text"
-    .task__header__box2__name
-      = link_to edit_user_path(current_user) do
-        = current_user.name
-   
+    .task__header__box2
+      = image_tag "#{current_user.image}",class: "task__header__box2__image"
+      .task__header__box2__name
+        = link_to edit_user_path(current_user) do
+          = current_user.name
+    
   .task__main
     .task__main__new
       = form_for [@task] do |f|

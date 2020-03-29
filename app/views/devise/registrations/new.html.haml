@@ -8,8 +8,13 @@
       = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
         = devise_error_messages!
         .field
+          .field-label 
+            = f.label :写真
+          .field-input
+            = f.file_field :image
           .field-label
             = f.label :名前
+            %i (6文字以下)
           .field-input
             = f.text_field :name, autofocus: true
         .field

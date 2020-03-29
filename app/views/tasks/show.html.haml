@@ -5,6 +5,7 @@
     .todo__header__box2
       .todo__header__box2__name
         = current_user.name
+        = image_tag "#{current_user.image}",class: "todo__header__box2__name__image"
       = link_to "/", method: :get do
         = icon('fas', 'undo-alt', class: 'todo__header__box2__return')
 
@@ -16,16 +17,20 @@
         .todo__main__new__box__hyouzi2
           ="終了日"
       = form_for [@task,Todo.new] do |f|
-        = f.text_field :todo, class: 'todo__main__new__form', placeholder: '新しいToDoを入力してください'
+        = f.text_field :todo, class: 'todo__main__new__form', placeholder: '新しいToDoを入力してください(10文字以下)'
         = f.date_field :enddate, class: 'todo__main__new__date'
         = f.submit '作成', class: 'todo__main__new__btn'
     .todo__main__list
       - @task.todos.sort_by{|task|((task.enddate - @today).to_i)}.each do |task|
         .todo__main__list__to-do
           = task.todo
-          = "終了日:#{task.enddate}"
-          = "残り:#{((task.enddate - @today).to_i)}日"
-          = "担当者:#{task.user.name}"
+          .todo__main__list__to-do__end
+            = "終了日:#{task.enddate}"
+          .todo__main__list__to-do__limit
+            = "残り:#{((task.enddate - @today).to_i)}日"
+          .todo__main__list__to-do__person
+            = "担当者:#{task.user.name}"
+          = image_tag "#{task.user.image}",class: "todo__main__list__to-do__image"
           = link_to "/tasks/:task_id/todos/#{task.id}", method: :delete do
             = icon('fas', 'trash-alt', class: 'todo__main__list__to-do__delete')
           
