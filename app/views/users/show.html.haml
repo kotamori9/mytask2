@@ -1,1 +1,18 @@
-aaaaaaa
+.search
+  .search__header
+    .search__header__box1
+      マイページ
+    .search__header__box2
+      .search__header__box2__name
+        = current_user.name
+        = image_tag "#{current_user.image}",class: "todo__header__box2__name__image"
+      = link_to "/", method: :get do
+        = icon('fas', 'undo-alt', class: 'search__header__box2__return')
+
+  .search__main
+    .search__main__list
+  -#     - @user.tasks.each do |usertask|
+  -#       .search__main__list__to-do
+  -#         = link_to "#{usertask.content}", "/tasks/#{usertask.id}", method: :get
+  -#         = link_to "/tasks/#{usertask.id}", method: :delete do
+  -#           = icon('fas', 'trash-alt', class: 'todo__main__list__to-do__delete')
