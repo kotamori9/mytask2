@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: mytask2_production
-  username: mytask2
-  password: <%= ENV['MYTASK2_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
