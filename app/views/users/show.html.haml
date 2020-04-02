@@ -11,8 +11,17 @@
 
   .search__main
     .search__main__list
-  -#     - @user.tasks.each do |usertask|
-  -#       .search__main__list__to-do
-  -#         = link_to "#{usertask.content}", "/tasks/#{usertask.id}", method: :get
-  -#         = link_to "/tasks/#{usertask.id}", method: :delete do
-  -#           = icon('fas', 'trash-alt', class: 'todo__main__list__to-do__delete')
+      - @todos.each do |usertask|
+        .search__main__list__to-do
+          = link_to "#{usertask.content}", "/tasks/#{usertask.id}", method: :get
+          = link_to "/tasks/#{usertask.id}", method: :delete do
+            = icon('fas', 'trash-alt', class: 'todo__main__list__to-do__delete')
+
+
+  -# - @items.each do |item|
+  -#       .productlists__productlist__box
+  -#         .productlists__productlist__box__top
+  -#           =link_to item_path(item) do
+  -#             = image_tag "#{item.photos.first.image}".to_s
+  -#       = item.name
+  -#       = "#{item.price}円"
