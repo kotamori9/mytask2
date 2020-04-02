@@ -1,27 +1,24 @@
-.search
-  .search__header
-    .search__header__box1
-      マイページ
-    .search__header__box2
-      .search__header__box2__name
-        = current_user.name
-        = image_tag "#{current_user.image}",class: "todo__header__box2__name__image"
+.mypage
+  .mypage__header
+    .mypage__header__box1
+      ="#{current_user.name}のマイページ"
+    .mypage__header__box2
       = link_to "/", method: :get do
-        = icon('fas', 'undo-alt', class: 'search__header__box2__return')
+        = icon('fas', 'undo-alt', class: 'mypage__header__box2__return')
 
-  .search__main
-    .search__main__list
+  .mypage__main
+    .mypage__main__list
+      .mypage__main__list__title
+        やること一覧
       - @todos.each do |usertask|
-        .search__main__list__to-do
-          = link_to "#{usertask.content}", "/tasks/#{usertask.id}", method: :get
-          = link_to "/tasks/#{usertask.id}", method: :delete do
-            = icon('fas', 'trash-alt', class: 'todo__main__list__to-do__delete')
-
-
-  -# - @items.each do |item|
-  -#       .productlists__productlist__box
-  -#         .productlists__productlist__box__top
-  -#           =link_to item_path(item) do
-  -#             = image_tag "#{item.photos.first.image}".to_s
-  -#       = item.name
-  -#       = "#{item.price}円"
+        .mypage__main__list__to-do
+          = usertask.todo
+          .mypage__main__list__to-do__end
+            = "終了日:#{usertask.enddate}"
+          .mypage__main__list__to-do__limit
+            = "残り:#{((usertask.enddate - @today).to_i)}日"
+          .mypage__main__list__to-do__person
+            = "担当者:#{usertask.user.name}"
+          = image_tag "#{usertask.user.image}",class: "mypage__main__list__to-do__image"
+          = link_to "/tasks/:task_id/todos/#{usertask.id}", method: :delete do
+            = icon('fas', 'trash-alt', class: 'mypage__main__list__to-do__delete')
