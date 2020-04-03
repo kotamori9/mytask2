@@ -17,11 +17,11 @@
           .field-input
             = f.email_field :email
         
-        -# .field
-        -#   .field-label
-        -#     = f.label :ユーザーアイコン
-        -#   .field-input
-        -#     = f.email_field :image
-
-        .actions
-          = f.submit "更新", class: 'btn'
+        .field
+          .field-label
+            = f.label :ユーザーアイコン
+          .field-input
+            = f.file_field :image
+        -if current_user.email != "guest@example.com" 
+          .actions
+            = f.submit "更新", class: 'btn'
