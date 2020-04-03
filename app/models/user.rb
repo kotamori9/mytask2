@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :name, presence: true, uniqueness: true,length: { maximum: 6 }
+  validates :image, presence: true
   has_many :tasks ,foreign_key:true
   has_many :todos
 
