@@ -5,6 +5,7 @@
       = link_to "ログアウト", destroy_user_session_path,method: :delete,class: 'btn'
       = link_to "トップページに戻る","/", class: 'btn'
     .account-page__inner--right.user-form
+    -if current_user.email != "guest@example.com" 
       = form_for(current_user) do |f|
         .field
           .field-label
@@ -16,12 +17,13 @@
             = f.label :email
           .field-input
             = f.email_field :email
-        
         .field
           .field-label
             = f.label :ユーザーアイコン
           .field-input
             = f.file_field :image
-        -if current_user.email != "guest@example.com" 
           .actions
             = f.submit "更新", class: 'btn'
+    - else
+      .account-page__inner--right.user-guest
+        ゲストユーザーは編集することができません
