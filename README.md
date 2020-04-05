@@ -7,7 +7,6 @@
 ゲストユーザー用（登録不要）ボタンと一般ユーザー用ボタンを
 設けました。アプリの確認をしていただく際は、ゲストログインボタンからログインしていただくと登録なしで確認できます。
 
-
 ### ToDo投稿機能
 ToDo一覧ページ
 <img width="1440" alt="toppage" src="https://user-images.githubusercontent.com/61148722/78465178-20751880-772d-11ea-8ed8-90c46acc9aa4.png">
