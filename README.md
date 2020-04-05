@@ -1,24 +1,32 @@
-# README
+# mytask2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリ機能
+### ログイン機能
+ログイン画面
+<img width="1436" alt="loginpage" src="https://user-images.githubusercontent.com/61148722/78464987-44375f00-772b-11ea-909e-63a7b52657ce.png">
+ゲストユーザー用（登録不要）ボタンと一般ユーザー用ボタンを
+設けました。アプリの確認をしていただく際は、ゲストログインボタンからログインしていただくと登録なしで確認できます。
 
-Things you may want to cover:
 
-* Ruby version
+### ToDo投稿機能
+ToDo一覧ページ
+<img width="1440" alt="toppage" src="https://user-images.githubusercontent.com/61148722/78465178-20751880-772d-11ea-8ed8-90c46acc9aa4.png">
 
-* System dependencies
+ToDo内容
+![ToDo](https://user-images.githubusercontent.com/61148722/78467705-4bba3080-774a-11ea-9427-278b11403d65.gif)
+入力フォームからToDoと終了日を入力して登録すると残り日数の少ない順にToDoを表示します。
 
-* Configuration
 
-* Database creation
+### マイページ機能
+マイページ画面
+![6ac82eb855f1810b7f1709c95fe51e74](https://user-images.githubusercontent.com/61148722/78468243-f46b8e80-7750-11ea-964f-103a3cba8b7a.gif)
 
-* Database initialization
+トップページのユーザーアイコンを押していただくとログインユーザーの登録したToDoを表示するページに飛びます。
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+### 検索機能
+検索画面
+![検索](https://user-images.githubusercontent.com/61148722/78468307-c20e6100-7751-11ea-85ca-3b7e3fe73941.gif)
 
-* Deployment instructions
+トップページの検索フォームからToDoのタイトルあいまい検索をできる機能です。
 
-* ...
