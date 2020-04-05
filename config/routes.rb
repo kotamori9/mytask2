@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
 
   devise_for :users 
+  
+  root "tasks#index"
 
   get 'users/show'
 
   devise_scope :user do
     post 'users/guest_sign_in', to: 'users/sessions#new_guest'
   end
-
-  root "tasks#index"
 
   resources :users, only: [:edit, :update,:show,:destroy]
   
