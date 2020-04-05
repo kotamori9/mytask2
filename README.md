@@ -1,35 +1,32 @@
 # mytask2
-Application for managing goverment office procedures
-<p align=“center”>
-<img src=“https://user-images.githubusercontent.com/61037834/77864615-9b898b00-7264-11ea-96b7-299ae5301417.jpg” width=70%>
-</p>
-## :入場券: Description
-GoReserve is management application for advance reservation for goverment office procedure.
-- User can reserve documents they want in advance.
-- Goverment office staffs can management user’s reservation in this application.
-- As a result, both of user and staff can operate procedure simply and quickly!
-### :男性:‍🦱User Screen
-<p align=“center”>
-<img src=“https://user-images.githubusercontent.com/61037834/77864615-9b898b00-7264-11ea-96b7-299ae5301417.jpg” width=70%>
-</p>
-### :上半身シルエット_2:Office staff screen
-<p align=“center”>
-<img src=“https://user-images.githubusercontent.com/61037834/77864615-9b898b00-7264-11ea-96b7-299ae5301417.jpg” width=70%>
-</p>
-### :カチンコ:Demo and Usage
-<p align=“center”>
-<img src=“https://user-images.githubusercontent.com/61037834/77864615-9b898b00-7264-11ea-96b7-299ae5301417.jpg” width=70%>
-</p>
-<p align=“center”>
-<a href=“https://guides.rubyonrails.org/”><img src=“https://camo.githubusercontent.com/e6318bb26cecc5eaec3548fe7446e2ccc0820afe/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3534333133332f37613663323763642d303963622d623965372d376231622d3163623536646662656530632e706e67” width=“80px;” /></a>
-<br>
-<a href=“http://haml.info/”><img src=“https://user-images.githubusercontent.com/57832553/74001312-78520600-49ae-11ea-9f29-33f42bd75df4.png” height=“45px;” /></a>
-<a href=“https://sass-lang.com/styleguide/brand”><img src=“https://user-images.githubusercontent.com/57832553/73996999-a29cc700-49a0-11ea-8f87-2ce847edfeea.png” height=“45px;” /></a>
-<a href=“https://jquery.com/”><img src=“https://user-images.githubusercontent.com/57832553/73933784-96712500-4920-11ea-974f-23b73e2c6113.png” height=“40px;” /></a>
-<a href=“https://docs.docker.com/”><img src=“https://user-images.githubusercontent.com/57832553/73936026-3cbf2980-4925-11ea-97b2-274bd60a8fb5.png” height=“45px;” /></a>
-<a href=“https://aws.amazon.com/jp/aws-jp-introduction/aws-jp-webinar-service-cut/”><img src=“https://user-images.githubusercontent.com/57832553/73935917-fec20580-4924-11ea-9b42-36715e8d4ede.png” height=“45px;” /></a>
-</p>
-## :経線付地球: App URL
-[https://github.com/golazooo23/go-reserve](https://github.com/golazooo23/go-reserve)
-## :しかめっ面の男性: Author
-- [Twitter](https://twitter.com/morinakakota)
+
+## アプリ機能
+### ログイン機能
+ログイン画面
+<img width="1436" alt="loginpage" src="https://user-images.githubusercontent.com/61148722/78464987-44375f00-772b-11ea-909e-63a7b52657ce.png">
+ゲストユーザー用（登録不要）ボタンと一般ユーザー用ボタンを
+設けました。アプリの確認をしていただく際は、ゲストログインボタンからログインしていただくと登録なしで確認できます。
+
+
+### ToDo投稿機能
+ToDo一覧ページ
+<img width="1440" alt="toppage" src="https://user-images.githubusercontent.com/61148722/78465178-20751880-772d-11ea-8ed8-90c46acc9aa4.png">
+
+ToDo内容
+![ToDo](https://user-images.githubusercontent.com/61148722/78467705-4bba3080-774a-11ea-9427-278b11403d65.gif)
+入力フォームからToDoと終了日を入力して登録すると残り日数の少ない順にToDoを表示します。
+
+
+### マイページ機能
+マイページ画面
+![6ac82eb855f1810b7f1709c95fe51e74](https://user-images.githubusercontent.com/61148722/78468243-f46b8e80-7750-11ea-964f-103a3cba8b7a.gif)
+
+トップページのユーザーアイコンを押していただくとログインユーザーの登録したToDoを表示するページに飛びます。
+
+
+### 検索機能
+検索画面
+![検索](https://user-images.githubusercontent.com/61148722/78468307-c20e6100-7751-11ea-85ca-3b7e3fe73941.gif)
+
+トップページの検索フォームからToDoのタイトルあいまい検索をできる機能です。
+
