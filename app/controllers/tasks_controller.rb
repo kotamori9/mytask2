@@ -36,7 +36,4 @@ class TasksController < ApplicationController
     params.require(:task).permit(:content).merge(user_id: current_user.id)
   end
 
-  # def search_params
-  #   params.require(:q).permit!
-  # end
 end
