@@ -82,6 +82,7 @@ gem 'devise'
 gem 'carrierwave'
 gem 'fog-aws'
 gem 'rspec-rails'
+gem 'jquery-rails'
 
 # デプロイ用
 group :production do
