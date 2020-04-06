@@ -18,14 +18,14 @@ ToDo内容
 
 ### マイページ機能
 マイページ画面
-![6ac82eb855f1810b7f1709c95fe51e74](https://user-images.githubusercontent.com/61148722/78468243-f46b8e80-7750-11ea-964f-103a3cba8b7a.gif)
+![mypage](https://user-images.githubusercontent.com/61148722/78610310-87b2da00-789f-11ea-89c9-bcafd9e9cdd8.gif)
 
 トップページのユーザーアイコンを押していただくとログインユーザーの登録したToDoを表示するページに飛びます。
 
 
 ### 検索機能
 検索画面
-![検索](https://user-images.githubusercontent.com/61148722/78468307-c20e6100-7751-11ea-85ca-3b7e3fe73941.gif)
+![274f607362d43addaefad0d6cec185ec](https://user-images.githubusercontent.com/61148722/78610608-322afd00-78a0-11ea-9759-7c689448c658.gif)
 
 トップページの検索フォームからToDoのタイトルあいまい検索をできる機能です。
 
