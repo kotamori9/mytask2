@@ -10,7 +10,7 @@
     .mypage__main__list
       .mypage__main__list__title
         やること一覧
-      - @todos.each do |usertask|
+      - @todos.sort_by{|usertask|((usertask.enddate - @today).to_i)}.each do |usertask|
         .mypage__main__list__to-do
           = usertask.todo
           .mypage__main__list__to-do__end
