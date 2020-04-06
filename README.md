@@ -9,10 +9,10 @@
 
 ### ToDo投稿機能
 ToDo一覧ページ
-<img width="1440" alt="toppage" src="https://user-images.githubusercontent.com/61148722/78465178-20751880-772d-11ea-8ed8-90c46acc9aa4.png">
+![6fd6612387ce2fcf634c078719b4ea49](https://user-images.githubusercontent.com/61148722/78608173-618b3b00-789b-11ea-963f-f6d507bad94a.jpg)
 
 ToDo内容
-![ToDo](https://user-images.githubusercontent.com/61148722/78467705-4bba3080-774a-11ea-9427-278b11403d65.gif)
+![todo](https://user-images.githubusercontent.com/61148722/78609540-d3fd1a80-789d-11ea-95fb-ff8983b03c15.gif)
 入力フォームからToDoと終了日を入力して登録すると残り日数の少ない順にToDoを表示します。
 
 
