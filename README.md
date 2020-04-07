@@ -12,7 +12,7 @@
 </p>
 
 # App URL
-  ## <a href="mytask2.com">mytask2.com</a>
+  ## <a href="mytask2.com" rel="nofollow">mytask2.com</a>
 
 # アプリ機能
 # １.ログイン機能
