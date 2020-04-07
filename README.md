@@ -55,4 +55,7 @@ ToDo内容
 
 一般ユーザーは名前、Eメール、ユーザーアイコンの編集を行えます。
 
+# ６.ユーザー登録機能
 
+新規登録画面
+![255df1cf2197d3eb04afbbb7fb5c563b](https://user-images.githubusercontent.com/61148722/78647645-d5f2c800-78f5-11ea-9f21-ea3d4f7f4c9e.gif)
