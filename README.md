@@ -1,6 +1,18 @@
 # mytask2
 
-## アプリ機能
+# 使用技術
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/61148722/78633019-71c30a80-78db-11ea-8102-2a39209f31ac.png" width="150px;" /></a>
+  <img src="https://user-images.githubusercontent.com/61148722/78633097-9f0fb880-78db-11ea-83f7-cdd9630a416e.png" height="70px;" /></a>
+  <img src="https://user-images.githubusercontent.com/61148722/78637414-42b19680-78e5-11ea-9fad-dbf55682d16a.jpg" height="70px;" /></a>
+  <img src="https://user-images.githubusercontent.com/61148722/78633052-88696180-78db-11ea-8daf-e80f05c94d65.png" height="70px;" /></a>
+  <img src="https://user-images.githubusercontent.com/61148722/78633140-bc448700-78db-11ea-87f8-b08c3835ffbe.png" height="70px;" /></a>
+  <img src="https://user-images.githubusercontent.com/61148722/78639464-f9fbdc80-78e8-11ea-97fc-979e9beb8840.png" height="70px;" /></a>
+  <img src="https://user-images.githubusercontent.com/61148722/78639519-139d2400-78e9-11ea-9b71-ce1d9a37bd5e.png" height="70px;" /></a>
+</p>
+
+
+# アプリ機能
 ### ログイン機能
 ログイン画面
 <img width="1436" alt="loginpage" src="https://user-images.githubusercontent.com/61148722/78464987-44375f00-772b-11ea-909e-63a7b52657ce.png">
@@ -9,23 +21,25 @@
 
 ### ToDo投稿機能
 ToDo一覧ページ
-<img width="1440" alt="toppage" src="https://user-images.githubusercontent.com/61148722/78465178-20751880-772d-11ea-8ed8-90c46acc9aa4.png">
+![6fd6612387ce2fcf634c078719b4ea49](https://user-images.githubusercontent.com/61148722/78608173-618b3b00-789b-11ea-963f-f6d507bad94a.jpg)
 
 ToDo内容
-![ToDo](https://user-images.githubusercontent.com/61148722/78467705-4bba3080-774a-11ea-9427-278b11403d65.gif)
+![todo](https://user-images.githubusercontent.com/61148722/78609540-d3fd1a80-789d-11ea-95fb-ff8983b03c15.gif)
 入力フォームからToDoと終了日を入力して登録すると残り日数の少ない順にToDoを表示します。
 
 
 ### マイページ機能
 マイページ画面
-![6ac82eb855f1810b7f1709c95fe51e74](https://user-images.githubusercontent.com/61148722/78468243-f46b8e80-7750-11ea-964f-103a3cba8b7a.gif)
+![mypage](https://user-images.githubusercontent.com/61148722/78610310-87b2da00-789f-11ea-89c9-bcafd9e9cdd8.gif)
 
 トップページのユーザーアイコンを押していただくとログインユーザーの登録したToDoを表示するページに飛びます。
 
 
 ### 検索機能
 検索画面
-![検索](https://user-images.githubusercontent.com/61148722/78468307-c20e6100-7751-11ea-85ca-3b7e3fe73941.gif)
+![274f607362d43addaefad0d6cec185ec](https://user-images.githubusercontent.com/61148722/78610608-322afd00-78a0-11ea-9759-7c689448c658.gif)
 
 トップページの検索フォームからToDoのタイトルあいまい検索をできる機能です。
 
+# App URL
+ ## mytask2.com
