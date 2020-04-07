@@ -12,7 +12,7 @@
 </p>
 
 # App URL
- ## [mytask2.com](mytask2.com)
+  ## <a href="mytask2.com">mytask2.com</a>
 
 # アプリ機能
 # １.ログイン機能
