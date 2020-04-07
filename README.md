@@ -1,6 +1,18 @@
 # mytask2
 
-## アプリ機能
+# 使用技術
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/61148722/78633019-71c30a80-78db-11ea-8102-2a39209f31ac.png" width="150px;" /></a>
+  <img src="https://user-images.githubusercontent.com/61148722/78633097-9f0fb880-78db-11ea-83f7-cdd9630a416e.png" height="70px;" /></a>
+  <img src="https://user-images.githubusercontent.com/61148722/78637414-42b19680-78e5-11ea-9fad-dbf55682d16a.jpg" height="70px;" /></a>
+  <img src="https://user-images.githubusercontent.com/61148722/78633052-88696180-78db-11ea-8daf-e80f05c94d65.png" height="70px;" /></a>
+  <img src="https://user-images.githubusercontent.com/61148722/78633140-bc448700-78db-11ea-87f8-b08c3835ffbe.png" height="70px;" /></a>
+  <img src="https://user-images.githubusercontent.com/61148722/78639464-f9fbdc80-78e8-11ea-97fc-979e9beb8840.png" height="70px;" /></a>
+  <img src="https://user-images.githubusercontent.com/61148722/78639519-139d2400-78e9-11ea-9b71-ce1d9a37bd5e.png" height="70px;" /></a>
+</p>
+
+
+# アプリ機能
 ### ログイン機能
 ログイン画面
 <img width="1436" alt="loginpage" src="https://user-images.githubusercontent.com/61148722/78464987-44375f00-772b-11ea-909e-63a7b52657ce.png">
@@ -29,3 +41,5 @@ ToDo内容
 
 トップページの検索フォームからToDoのタイトルあいまい検索をできる機能です。
 
+# App URL
+ ## mytask2.com
