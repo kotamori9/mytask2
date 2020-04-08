@@ -3,7 +3,12 @@ describe Todo do
   describe '#create' do
 
     it "todoがない場合登録できないこと" do
-      user = build(:todo, todo: "")
+      todo = build(:todo, todo: "")
+      todo.valid?
+    end
+
+    it "enddateがない場合登録できないこと" do
+      todo = build(:todo, enddate: "")
       todo.valid?
     end
 
