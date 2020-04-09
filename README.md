@@ -61,3 +61,5 @@ ToDo内容
 
 新規登録画面
 ![ユーザー登録](https://user-images.githubusercontent.com/61148722/78872219-e5078080-7a83-11ea-9b57-adf27295d58e.gif)
+
+登録した画像をプレビュー表示で確認できるようにしました。
