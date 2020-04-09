@@ -9,7 +9,7 @@ class Task < ApplicationRecord
 
   belongs_to :user
   has_many :todos, dependent: :delete_all
-  validates :content, presence: true
-
+  validates :content, presence: true,length: { maximum: 10 }
+  
   
 end
