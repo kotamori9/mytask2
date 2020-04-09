@@ -15,7 +15,7 @@
   .task__main
     .task__main__new
       = form_for [@task] do |f|
-        = f.text_field :content, class: 'task__main__new__form', placeholder: '新しいToDoを入力してください'
+        = f.text_field :content, class: 'task__main__new__form', placeholder: '新しいToDoを入力してください(10文字以下)'
         = f.submit '作成', class: 'task__main__new__btn'
     .task__main__list
       - @tasks.each do |task|
