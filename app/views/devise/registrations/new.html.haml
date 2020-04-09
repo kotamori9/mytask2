@@ -10,8 +10,13 @@
         .field
           .field-label 
             = f.label :写真
+          .image-label
+          - if @user.image.present?
+            = image_tag @user.image, id: :img_prev
+          - else
+            = image_tag "member_photo_noimage_thumb.png", width: "112", height: "112", alt: "preview", id: :img_prev
           .field-input
-            = f.file_field :image
+            = f.file_field :image,id: :user_img
           .field-label
             = f.label :名前
             %i (6文字以下)
