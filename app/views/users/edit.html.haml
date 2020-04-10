@@ -19,7 +19,7 @@
             = f.label :ユーザーアイコン
           .image-label
           - if @user.image.present?
-            = image_tag (@user.image).to_s, width: "112", height: "112", alt: "preview", id: :img_prev
+            = image_tag "#{(@user.image).to_s}", width: "112", height: "112", alt: "preview", id: :img_prev
             = f.file_field :image
           - else
             = image_tag "member_photo_noimage_thumb.png", width: "112", height: "112", alt: "preview", id: :img_prev
