@@ -53,7 +53,8 @@ ToDo内容
 ゲストユーザーでのログインの際は利用できません。
 
 一般ユーザー編集画面
-<img width="1440" alt="84b96c4d0084854849debb60c70a05a2" src="https://user-images.githubusercontent.com/61148722/78640893-6e377f80-78eb-11ea-98bb-517dcc9ff307.png">
+![edit](https://user-images.githubusercontent.com/61148722/79034117-91fe0c80-7bee-11ea-88d7-6570f390ce05.gif)
+
 
 一般ユーザーは名前、Eメール、ユーザーアイコンの編集を行えます。
 
