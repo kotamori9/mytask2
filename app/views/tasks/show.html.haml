@@ -23,7 +23,8 @@
     .todo__main__list
       - @task.todos.sort_by{|task|((task.enddate - @today).to_i)}.each do |task|
         .todo__main__list__to-do
-          = task.todo
+          .todo__main__list__to-do__content
+            = task.todo
           .todo__main__list__to-do__end
             = "終了日:#{task.enddate}"
           .todo__main__list__to-do__limit
