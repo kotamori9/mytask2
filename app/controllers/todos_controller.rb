@@ -6,8 +6,17 @@ class TodosController < ApplicationController
   end
 
   def create
-    @todo = Todo.create(todo_params)
-    if @todo.save
+    @todo = Todo.new(todo_params)
+
+    if (@todo.enddate).to_s < (Date.today).to_s
+      flash[:alert]='過去の日付は選択できません'
+      redirect_back(fallback_location: root_path)
+
+    elsif @todo.invalid?
+      flash[:alert]='ToDoを入力してください'
+      redirect_back(fallback_location: root_path)
+
+    elsif @todo.save
       flash[:notice]='ToDoが作成されました'
       redirect_back(fallback_location: root_path)
       
